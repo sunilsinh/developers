@@ -20,14 +20,14 @@ class Customer {
 	*/
 	public function __get($var) { // when unaccessible data called from object 
  
-    echo "Unavailable $var<br />";
+       echo "Unavailable $var<br />";
     }
     /*
 	* function to create magic method __call()
 	* 21 Dec 2015
 	*/
     public function __call($method,$argument) {
-     echo "method is not defined <br />";
+       echo "method is not defined <br />";
     }
     /*
 	* function to create magic method __toString() 
@@ -35,7 +35,7 @@ class Customer {
 	*/
     public function __toString() { ##It allows you to set a string value for the object that will 
     	                           ##be used if the object is ever used as a string
-     echo "to string";
+        echo "to string";
     }
   
      
