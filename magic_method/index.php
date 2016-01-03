@@ -48,7 +48,7 @@ class Customer {
     }
      /*
 	* function to create magic method __debugInfor() 
-	* Use its use when any not acceessible method call statically
+	* Use when any not acceessible method call statically
 	* 23 Dec 2015
 	*/
     public function __debugInfo() {
