@@ -2,6 +2,11 @@
 #################Author#############
 ########Sunil Singh#################
 ####################################
+  function __autoload($Class) {
+        print "Bad class name: $Class!<br />";
+        include "barclass.php";
+    }
+
 class Customer {
 
 	public $Age;
@@ -57,9 +62,6 @@ class Customer {
         ];
     }
 
-  
-     
-
 }
 
  $ob = new Customer(); ##Constructor created
@@ -70,3 +72,5 @@ class Customer {
  ##Method Customer::__toString() must return a string value in D:\xampp\htdocs\developers\magic_method\index.php on line 30 
  ## after that use error_reporting();
  echo Customer::test('hello Static method testing');
+ $foo = new Bar;
+ $foo->wombat();
